@@ -94,7 +94,7 @@ class DnDCharacterSpellsSheet extends React.Component<
                   fontSize: '11px'
                 }}
               >
-                Spellcasting Class/Ability
+                Classe da Incantatore
               </label>
             </div>
             <div className='col-md-9 pr-2 pl-2' style={{ marginTop: '18px' }}>
@@ -116,7 +116,7 @@ class DnDCharacterSpellsSheet extends React.Component<
                         marginBottom: '0'
                       }}
                     >
-                      Prepared Spells
+                      Totale
                     </label>
                     <label
                       style={{
@@ -126,7 +126,7 @@ class DnDCharacterSpellsSheet extends React.Component<
                         marginBottom: '0'
                       }}
                     >
-                      Total
+                      Incantesimi Preparati
                     </label>
                   </div>
                   <div className='col-4 pr-4 pl-4'>
@@ -145,7 +145,17 @@ class DnDCharacterSpellsSheet extends React.Component<
                         marginBottom: '0'
                       }}
                     >
-                      Spell Save DC
+                      CD Tiro Salvezza
+                    </label>
+                    <label
+                      style={{
+                        textTransform: 'none',
+                        width: '100%',
+                        textAlign: 'center',
+                        marginBottom: '0'
+                      }}
+                    >
+                      Incantesimi
                     </label>
                   </div>
                   <div className='col-4 pr-4 pl-4'>
@@ -164,7 +174,7 @@ class DnDCharacterSpellsSheet extends React.Component<
                         marginBottom: '0'
                       }}
                     >
-                      Spell Attack
+                      Bonus di Attacco
                     </label>
                     <label
                       style={{
@@ -174,7 +184,7 @@ class DnDCharacterSpellsSheet extends React.Component<
                         marginBottom: '0'
                       }}
                     >
-                      Bonus
+                      Incantesimi
                     </label>
                   </div>
                 </div>

@@ -93,7 +93,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   fontSize: '11px'
                 }}
               >
-                Character Name
+                Nome Personaggio
               </label>
             </div>
             <div className='col-md-9 pr-2 pl-2'>
@@ -107,7 +107,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('classLevel', e.target.value)
                       }
                     />
-                    <label>Class & Level</label>
+                    <label>Classe & Livello</label>
                   </div>
                   <div className='col-md-3 col-6 pl-0 pr-0'>
                     <input
@@ -127,7 +127,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('playerName', e.target.value)
                       }
                     />
-                    <label>Player Name</label>
+                    <label>Nome Giocatore</label>
                   </div>
                   <div className='col-md-3 col-6 pl-0 pr-0'>
                     <input
@@ -137,7 +137,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('faction', e.target.value)
                       }
                     />
-                    <label>Faction</label>
+                    <label>Fazione</label>
                   </div>
                 </div>
                 <div className='row pl-3 pr-3'>
@@ -149,7 +149,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('race', e.target.value)
                       }
                     />
-                    <label>Race</label>
+                    <label>Razza</label>
                   </div>
                   <div className='col-md-3 col-6 pl-0 pr-0'>
                     <input
@@ -159,7 +159,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('alignment', e.target.value)
                       }
                     />
-                    <label>Alignment</label>
+                    <label>Allineamento</label>
                   </div>
                   <div className='col-md-3 col-6 pl-0 pr-0'>
                     <input
@@ -169,7 +169,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('xp', e.target.value)
                       }
                     />
-                    <label>Experience Points</label>
+                    <label>Punti Esperienza</label>
                   </div>
                   <div className='col-md-3 col-6 pl-0 pr-0'>
                     <input
@@ -179,7 +179,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         this.updateCharacter('dciNo', e.target.value)
                       }
                     />
-                    <label>DCI Number</label>
+                    <label>Numero DCI</label>
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@ class DnDCharacterStatsSheet extends React.Component<
                 <div className='col-4 pr-1'>
                   <div className='d-and-d-box gray'>
                     <Statbox
-                      label='Strength'
+                      label='Forza'
                       name='str'
                       value={character.str}
                       onChange={(name: string, value: any) => {
@@ -200,7 +200,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Statbox
-                      label='Dexterity'
+                      label='Destrezza'
                       name='dex'
                       value={character.dex}
                       onChange={(name: string, value: any) => {
@@ -208,7 +208,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Statbox
-                      label='Constitution'
+                      label='Costituzione'
                       name='con'
                       value={character.con}
                       onChange={(name: string, value: any) => {
@@ -216,7 +216,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Statbox
-                      label='Intelligence'
+                      label='Intelligenza'
                       name='int'
                       value={character.int}
                       onChange={(name: string, value: any) => {
@@ -224,7 +224,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Statbox
-                      label='Wisdom'
+                      label='Saggezza'
                       name='wis'
                       value={character.wis}
                       onChange={(name: string, value: any) => {
@@ -232,7 +232,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Statbox
-                      label='Charisma'
+                      label='Carisma'
                       name='cha'
                       value={character.cha}
                       onChange={(name: string, value: any) => {
@@ -243,7 +243,7 @@ class DnDCharacterStatsSheet extends React.Component<
                 </div>
                 <div className='col-8'>
                   <StatRow
-                    label='Inspiration'
+                    label='Ispirazione'
                     name='inspiration'
                     value={character.inspiration}
                     onChange={(name: string, value: any) => {
@@ -252,7 +252,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   />
                   <StatRow
                     classes='rounded'
-                    label='Proficiency Bonus'
+                    label='Bonus Competenza'
                     name='proficiencyBonus'
                     value={character.proficiencyBonus}
                     onChange={(name: string, value: any) => {
@@ -262,7 +262,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   <div className='d-and-d-box'>
                     <div style={{ textAlign: 'left' }}>
                       <Skill
-                        label='Strength'
+                        label='Forza'
                         name='strSave'
                         value={character.strSave}
                         checked={character.strSaveChecked}
@@ -271,7 +271,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Dexterity'
+                        label='Destrezza'
                         name='dexSave'
                         value={character.dexSave}
                         checked={character.dexSaveChecked}
@@ -280,7 +280,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Constitution'
+                        label='Costituzione'
                         name='conSave'
                         value={character.conSave}
                         checked={character.conSaveChecked}
@@ -289,7 +289,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Intelligence'
+                        label='Intelligenza'
                         name='intSave'
                         value={character.intSave}
                         checked={character.intSaveChecked}
@@ -298,7 +298,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Wisdom'
+                        label='Saggezza'
                         name='wisSave'
                         value={character.wisSave}
                         checked={character.wisSaveChecked}
@@ -307,7 +307,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Charisma'
+                        label='Carisma'
                         name='chaSave'
                         value={character.chaSave}
                         checked={character.chaSaveChecked}
@@ -320,14 +320,14 @@ class DnDCharacterStatsSheet extends React.Component<
                       className='d-and-d-title'
                       style={{ marginTop: '10px' }}
                     >
-                      Saving Throws
+                      Tiri Salvezza
                     </label>
                   </div>
                   <div className='d-and-d-box'>
                     <div style={{ textAlign: 'left' }}>
                       <Skill
-                        label='Acrobatics'
-                        hint='(Dex)'
+                        label='Acrobazia'
+                        hint='(Des)'
                         name='skillAcrobatics'
                         value={character.skillAcrobatics}
                         checked={character.skillAcrobaticsChecked}
@@ -336,8 +336,8 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Animal Handling'
-                        hint='(Wis)'
+                        label='Addestrare Animali'
+                        hint='(Sag)'
                         name='skillAnimalHandling'
                         value={character.skillAnimalHandling}
                         checked={character.skillAnimalHandlingChecked}
@@ -346,7 +346,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Arcana'
+                        label='Arcano'
                         hint='(Int)'
                         name='skillArcana'
                         value={character.skillArcana}
@@ -356,8 +356,8 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Athletics'
-                        hint='(Str)'
+                        label='Atletica'
+                        hint='(For)'
                         name='skillAthletics'
                         value={character.skillAthletics}
                         checked={character.skillAthleticsChecked}
@@ -366,47 +366,17 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Deception'
-                        hint='(Cha)'
-                        name='skillDeception'
-                        value={character.skillDeception}
-                        checked={character.skillDeceptionChecked}
+                        label='Furtività'
+                        hint='(Des)'
+                        name='skillStealth'
+                        value={character.skillStealth}
+                        checked={character.skillStealthChecked}
                         onChange={(name: string, value: any) => {
                           this.updateCharacter(name, value)
                         }}
                       />
                       <Skill
-                        label='History'
-                        hint='(Int)'
-                        name='skillHistory'
-                        value={character.skillHistory}
-                        checked={character.skillHistoryChecked}
-                        onChange={(name: string, value: any) => {
-                          this.updateCharacter(name, value)
-                        }}
-                      />
-                      <Skill
-                        label='Insight'
-                        hint='(Wis)'
-                        name='skillInsight'
-                        value={character.skillInsight}
-                        checked={character.skillInsightChecked}
-                        onChange={(name: string, value: any) => {
-                          this.updateCharacter(name, value)
-                        }}
-                      />
-                      <Skill
-                        label='Intimidation'
-                        hint='(Cha)'
-                        name='skillIntimidation'
-                        value={character.skillIntimidation}
-                        checked={character.skillIntimidationChecked}
-                        onChange={(name: string, value: any) => {
-                          this.updateCharacter(name, value)
-                        }}
-                      />
-                      <Skill
-                        label='Investigation'
+                        label='Indagare'
                         hint='(Int)'
                         name='skillInvestigation'
                         value={character.skillInvestigation}
@@ -416,8 +386,48 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Medicine'
-                        hint='(Wis)'
+                        label='Inganno'
+                        hint='(Car)'
+                        name='skillDeception'
+                        value={character.skillDeception}
+                        checked={character.skillDeceptionChecked}
+                        onChange={(name: string, value: any) => {
+                          this.updateCharacter(name, value)
+                        }}
+                      />
+                      <Skill
+                        label='Intimidire'
+                        hint='(Car)'
+                        name='skillIntimidation'
+                        value={character.skillIntimidation}
+                        checked={character.skillIntimidationChecked}
+                        onChange={(name: string, value: any) => {
+                          this.updateCharacter(name, value)
+                        }}
+                      />
+                      <Skill
+                        label='Intrattenere'
+                        hint='(Car)'
+                        name='skillPerformance'
+                        value={character.skillPerformance}
+                        checked={character.skillPerformanceChecked}
+                        onChange={(name: string, value: any) => {
+                          this.updateCharacter(name, value)
+                        }}
+                      />
+                      <Skill
+                        label='Intuizione'
+                        hint='(Sag)'
+                        name='skillInsight'
+                        value={character.skillInsight}
+                        checked={character.skillInsightChecked}
+                        onChange={(name: string, value: any) => {
+                          this.updateCharacter(name, value)
+                        }}
+                      />
+                      <Skill
+                        label='Medicina'
+                        hint='(Sag)'
                         name='skillMedicine'
                         value={character.skillMedicine}
                         checked={character.skillMedicineChecked}
@@ -426,7 +436,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Nature'
+                        label='Natura'
                         hint='(Int)'
                         name='skillNature'
                         value={character.skillNature}
@@ -436,8 +446,8 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Perception'
-                        hint='(Wis)'
+                        label='Percezione'
+                        hint='(Sag)'
                         name='skillPerception'
                         value={character.skillPerception}
                         checked={character.skillPerceptionChecked}
@@ -446,18 +456,8 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Performance'
-                        hint='(Cha)'
-                        name='skillPerformance'
-                        value={character.skillPerformance}
-                        checked={character.skillPerformanceChecked}
-                        onChange={(name: string, value: any) => {
-                          this.updateCharacter(name, value)
-                        }}
-                      />
-                      <Skill
-                        label='Persuasion'
-                        hint='(Cha)'
+                        label='Persuasione'
+                        hint='(Car)'
                         name='skillPersuasion'
                         value={character.skillPersuasion}
                         checked={character.skillPersuasionChecked}
@@ -466,7 +466,17 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Religion'
+                        label='Rapidità di Mano'
+                        hint='(Des)'
+                        name='skillSlightOfHand'
+                        value={character.skillSlightOfHand}
+                        checked={character.skillSlightOfHandChecked}
+                        onChange={(name: string, value: any) => {
+                          this.updateCharacter(name, value)
+                        }}
+                      />
+                      <Skill
+                        label='Religione'
                         hint='(Int)'
                         name='skillReligion'
                         value={character.skillReligion}
@@ -476,31 +486,21 @@ class DnDCharacterStatsSheet extends React.Component<
                         }}
                       />
                       <Skill
-                        label='Sleight of Hand'
-                        hint='(Dex)'
-                        name='skillSlightOfHand'
-                        value={character.skillSlightOfHand}
-                        checked={character.skillSlightOfHandChecked}
-                        onChange={(name: string, value: any) => {
-                          this.updateCharacter(name, value)
-                        }}
-                      />
-                      <Skill
-                        label='Stealth'
-                        hint='(Dex)'
-                        name='skillStealth'
-                        value={character.skillStealth}
-                        checked={character.skillStealthChecked}
-                        onChange={(name: string, value: any) => {
-                          this.updateCharacter(name, value)
-                        }}
-                      />
-                      <Skill
-                        label='Survival'
-                        hint='(Wis)'
+                        label='Sopravvivenza'
+                        hint='(Sag)'
                         name='skillSurvival'
                         value={character.skillSurvival}
                         checked={character.skillSurvivalChecked}
+                        onChange={(name: string, value: any) => {
+                          this.updateCharacter(name, value)
+                        }}
+                      />
+                      <Skill
+                        label='Storia'
+                        hint='(Int)'
+                        name='skillHistory'
+                        value={character.skillHistory}
+                        checked={character.skillHistoryChecked}
                         onChange={(name: string, value: any) => {
                           this.updateCharacter(name, value)
                         }}
@@ -510,7 +510,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       className='d-and-d-title'
                       style={{ marginTop: '10px' }}
                     >
-                      Skills
+                      Abilità
                     </label>
                   </div>
                 </div>
@@ -518,7 +518,7 @@ class DnDCharacterStatsSheet extends React.Component<
               <div className='mt-2'>
                 <StatRow
                   classes='rounded rounded-sides'
-                  label='Passive Wisdom (Perception)'
+                  label='Saggezza (Percezione) Passiva'
                   name='passivePerception'
                   value={character.passivePerception}
                   onChange={(name: string, value: any) => {
@@ -539,7 +539,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   rows={12}
                 />
                 <label className='d-and-d-title' style={{ marginTop: '10px' }}>
-                  Other Proficiencies & Languages
+                  Altre Competenze & Linguaggi
                 </label>
               </div>
             </div>
@@ -550,8 +550,8 @@ class DnDCharacterStatsSheet extends React.Component<
                   <div className='col-4 pr-2'>
                     <StatBox2
                       classes='shield'
-                      labelTop='Armour'
-                      label='Class'
+                      labelTop='Classe'
+                      label='Armatura'
                       name='ac'
                       value={character.ac}
                       onChange={(name: string, value: any) => {
@@ -561,7 +561,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   </div>
                   <div className='col-4 pr-2 pl-2'>
                     <StatBox2
-                      label='Initiative'
+                      label='Iniziativa'
                       name='init'
                       value={character.init}
                       onChange={(name: string, value: any) => {
@@ -571,7 +571,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   </div>
                   <div className='col-4 pl-2'>
                     <StatBox2
-                      label='Speed'
+                      label='Velocità'
                       name='speed'
                       value={character.speed}
                       onChange={(name: string, value: any) => {
@@ -590,7 +590,9 @@ class DnDCharacterStatsSheet extends React.Component<
                   }}
                 >
                   <div className='d-and-d-gray-text'>
-                    <label style={{ width: '95px' }}>Hit Point Maximum</label>
+                    <label style={{ width: '95px' }}>
+                      Massimo dei Punti Ferita
+                    </label>
                     <input
                       type='text'
                       style={{ width: 'calc(100% - 95px)' }}
@@ -608,7 +610,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     onChange={(e) => this.updateCharacter('hp', e.target.value)}
                   />
                   <label className='d-and-d-title' style={{ marginTop: '5px' }}>
-                    Current Hit Points
+                    Punti Ferita Attuali
                   </label>
                 </div>
                 <div
@@ -624,7 +626,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     }
                   />
                   <label className='d-and-d-title' style={{ marginTop: '5px' }}>
-                    Temporary Hit Points
+                    Punti Ferita Temporanei
                   </label>
                 </div>
 
@@ -635,7 +637,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       style={{ paddingBottom: '5px' }}
                     >
                       <div className='d-and-d-gray-text'>
-                        <label style={{ width: '25px' }}>Total</label>
+                        <label style={{ width: '25px' }}>Totale</label>
                         <input
                           type='text'
                           style={{ width: 'calc(100% - 25px)' }}
@@ -660,7 +662,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         className='d-and-d-title'
                         style={{ marginTop: '5px' }}
                       >
-                        Hit Dice
+                        Dadi Vita
                       </label>
                     </div>
                   </div>
@@ -671,7 +673,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     >
                       <DeathSave
                         classes='d-and-d-save-success'
-                        label='Sucesses'
+                        label='Sucessi'
                         name='deathsaveSuccesses'
                         value={character.deathsaveSuccesses}
                         onChange={(name: string, value: any) => {
@@ -680,7 +682,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       />
                       <DeathSave
                         classes='d-and-d-save-failure'
-                        label='Failures'
+                        label='Fallimenti'
                         name='deathsaveFailures'
                         value={character.deathsaveFailures}
                         onChange={(name: string, value: any) => {
@@ -691,7 +693,7 @@ class DnDCharacterStatsSheet extends React.Component<
                         className='d-and-d-title'
                         style={{ marginTop: '6px' }}
                       >
-                        Death Saves
+                        TS Contro Morte
                       </label>
                     </div>
                   </div>
@@ -715,7 +717,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   rows={6}
                 />
                 <label className='d-and-d-title' style={{ marginTop: '10px' }}>
-                  Attacks & Spellcasting
+                  Attacchi & Incantesimi
                 </label>
               </div>
 
@@ -723,7 +725,7 @@ class DnDCharacterStatsSheet extends React.Component<
                 <div className='row'>
                   <div className='' style={{ width: '100px' }}>
                     <Currency
-                      label='CP'
+                      label='MR'
                       name='cp'
                       value={character.cp}
                       onChange={(name: string, value: any) => {
@@ -731,7 +733,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Currency
-                      label='SP'
+                      label='MA'
                       name='sp'
                       value={character.sp}
                       onChange={(name: string, value: any) => {
@@ -739,7 +741,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Currency
-                      label='EP'
+                      label='ME'
                       name='ep'
                       value={character.ep}
                       onChange={(name: string, value: any) => {
@@ -747,7 +749,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Currency
-                      label='GP'
+                      label='MO'
                       name='gp'
                       value={character.gp}
                       onChange={(name: string, value: any) => {
@@ -755,7 +757,7 @@ class DnDCharacterStatsSheet extends React.Component<
                       }}
                     />
                     <Currency
-                      label='PP'
+                      label='MP'
                       name='pp'
                       value={character.pp}
                       onChange={(name: string, value: any) => {
@@ -784,7 +786,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   </div>
                 </div>
                 <label className='d-and-d-title' style={{ marginTop: '10px' }}>
-                  Equipment
+                  Equipaggiamento
                 </label>
               </div>
             </div>
@@ -814,7 +816,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     }
                     rows={3}
                   />
-                  <label className='d-and-d-title'>Personality Traits</label>
+                  <label className='d-and-d-title'>Tratti Caratteriali</label>
                 </div>
                 <div
                   className='d-and-d-box white'
@@ -832,7 +834,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     }
                     rows={3}
                   />
-                  <label className='d-and-d-title'>Ideals</label>
+                  <label className='d-and-d-title'>Ideali</label>
                 </div>
                 <div
                   className='d-and-d-box white'
@@ -850,7 +852,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     }
                     rows={2}
                   />
-                  <label className='d-and-d-title'>Bonds</label>
+                  <label className='d-and-d-title'>Legami</label>
                 </div>
                 <div
                   className='d-and-d-box white'
@@ -868,7 +870,7 @@ class DnDCharacterStatsSheet extends React.Component<
                     }
                     rows={2}
                   />
-                  <label className='d-and-d-title'>Flaws</label>
+                  <label className='d-and-d-title'>Difetti</label>
                 </div>
               </div>
               <div className='d-and-d-box mt-3'>
@@ -883,7 +885,7 @@ class DnDCharacterStatsSheet extends React.Component<
                   rows={27}
                 />
                 <label className='d-and-d-title' style={{ marginTop: '10px' }}>
-                  Features & Traits
+                  Privilegi & Tratti
                 </label>
               </div>
             </div>

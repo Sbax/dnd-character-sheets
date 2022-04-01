@@ -185,7 +185,7 @@
   cursor: pointer;
 }
 .d-and-d-character-sheet .d-and-d-skill-circle.active {
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(70, 70, 70);
 }
 .d-and-d-character-sheet .d-and-d-skill input {
   border-bottom: 1px solid black;
