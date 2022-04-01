@@ -11,7 +11,6 @@ import axios from 'axios'
 import qs from 'qs'
 
 import { DnDCharacterStatsSheet, DnDCharacterProfileSheet, DnDCharacterSpellSheet, DnDCharacter } from 'dnd-character-sheets'
-import 'dnd-character-sheets/dist/index.css'
 
 function ScrollToTop() {
   const { pathname } = useLocation();

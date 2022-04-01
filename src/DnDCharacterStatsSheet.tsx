@@ -11,8 +11,6 @@ import DeathSave from './Components/DeathSave'
 import AttackTable from './Components/AttackTable'
 import Currency from './Components/Currency'
 
-import './dndstyles.css'
-
 interface IDnDCharacterStatsSheetProps {
   character?: DnDCharacter
   defaultCharacter?: DnDCharacter

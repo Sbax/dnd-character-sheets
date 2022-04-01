@@ -7,8 +7,6 @@ import DnDCharacter from './DnDCharacter'
 import StatRow from './Components/StatRow'
 import Image from './Components/Image'
 
-import './dndstyles.css'
-
 interface IDnDCharacterProfileSheetProps {
   character?: DnDCharacter
   defaultCharacter?: DnDCharacter

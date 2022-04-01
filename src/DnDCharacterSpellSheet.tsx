@@ -5,7 +5,6 @@ import DnDCharacter from './DnDCharacter'
 
 import StatBox2 from './Components/StatBox2'
 
-import './dndstyles.css'
 import SpellTable from './Components/SpellTable'
 
 interface IDnDCharacterSpellsSheetProps {
