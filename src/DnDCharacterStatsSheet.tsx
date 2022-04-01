@@ -19,6 +19,7 @@ interface IDnDCharacterStatsSheetProps {
     changedField: string,
     newValue: any
   ) => void
+  title: string
 }
 
 interface IDnDCharacterStatsSheetState {
@@ -75,7 +76,9 @@ class DnDCharacterStatsSheet extends React.Component<
         <div>
           <div className='row mb-4'>
             <div className='col-md-3 pr-2 pl-2'>
-              <div className='d-and-d-page-title'>D&D</div>
+              <div className='d-and-d-page-title'>
+                {this.props.title || 'D&D'}
+              </div>
               <div className='d-and-d-attribute-collection char-name pr-3 pl-3'>
                 <input
                   type='text'

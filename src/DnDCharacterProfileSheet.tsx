@@ -15,6 +15,7 @@ interface IDnDCharacterProfileSheetProps {
     changedField: string,
     newValue: any
   ) => void
+  title: string
 }
 
 interface IDnDCharacterProfileSheetState {
@@ -71,7 +72,9 @@ class DnDCharacterProfileSheet extends React.Component<
         <div>
           <div className='row mb-4'>
             <div className='col-md-3 pr-2 pl-2'>
-              <div className='d-and-d-page-title'>D&D</div>
+              <div className='d-and-d-page-title'>
+                {this.props.title || 'D&D'}
+              </div>
               <div className='d-and-d-attribute-collection char-name pr-3 pl-3'>
                 <input
                   type='text'
@@ -163,7 +166,7 @@ class DnDCharacterProfileSheet extends React.Component<
           <div className='row'>
             <div className='col-md-4'>
               <div className='d-and-d-box square'>
-                <Image 
+                <Image
                   name='appearance'
                   value={character.appearance}
                   onChange={(name: string, value: any) => {
@@ -178,9 +181,7 @@ class DnDCharacterProfileSheet extends React.Component<
               <div className='d-and-d-box mt-3'>
                 <textarea
                   style={{ paddingBottom: '5px' }}
-                  value={
-                    character.backstory ? character.backstory : ''
-                  }
+                  value={character.backstory ? character.backstory : ''}
                   onChange={(e) =>
                     this.updateCharacter('backstory', e.target.value)
                   }
@@ -196,13 +197,18 @@ class DnDCharacterProfileSheet extends React.Component<
               <div className='d-and-d-box'>
                 <div className='row'>
                   <div className='col-md-6 border-right'>
-                    <div className='d-and-d-gray-text' style={{ paddingBottom: '1px' }}>
+                    <div
+                      className='d-and-d-gray-text'
+                      style={{ paddingBottom: '1px' }}
+                    >
                       <label style={{ width: '70px' }}>Rango Fazione</label>
                       <input
                         type='text'
                         style={{ width: 'calc(100% - 70px)' }}
                         className='d-and-d-linput'
-                        value={character.factionRank ? character.factionRank : ''}
+                        value={
+                          character.factionRank ? character.factionRank : ''
+                        }
                         onChange={(e) =>
                           this.updateCharacter('factionRank', e.target.value)
                         }
@@ -211,9 +217,7 @@ class DnDCharacterProfileSheet extends React.Component<
 
                     <textarea
                       style={{ paddingBottom: '5px' }}
-                      value={
-                        character.allies ? character.allies : ''
-                      }
+                      value={character.allies ? character.allies : ''}
                       onChange={(e) =>
                         this.updateCharacter('allies', e.target.value)
                       }
@@ -221,7 +225,10 @@ class DnDCharacterProfileSheet extends React.Component<
                     />
                   </div>
                   <div className='col-md-6'>
-                    <div className='d-and-d-box gray noborder' style={{marginBottom: '13px'}}>
+                    <div
+                      className='d-and-d-box gray noborder'
+                      style={{ marginBottom: '13px' }}
+                    >
                       <div className='d-and-d-faction-input'>
                         <label>Fazione</label>
                         <input
@@ -232,7 +239,7 @@ class DnDCharacterProfileSheet extends React.Component<
                           }
                         />
                       </div>
-                      <Image 
+                      <Image
                         classes='faction'
                         name='factionImg'
                         value={character.factionImg}
@@ -244,9 +251,7 @@ class DnDCharacterProfileSheet extends React.Component<
 
                     <textarea
                       style={{ paddingBottom: '5px' }}
-                      value={
-                        character.allies2 ? character.allies2 : ''
-                      }
+                      value={character.allies2 ? character.allies2 : ''}
                       onChange={(e) =>
                         this.updateCharacter('allies2', e.target.value)
                       }
@@ -254,22 +259,27 @@ class DnDCharacterProfileSheet extends React.Component<
                     />
                   </div>
                 </div>
-                
+
                 <label className='d-and-d-title' style={{ marginTop: '10px' }}>
                   Alleati & Organizzazioni
                 </label>
               </div>
-              
+
               <div className='d-and-d-box mt-3'>
                 <div className='row'>
                   <div className='col-md-6 border-right'>
                     <textarea
                       style={{ paddingBottom: '5px' }}
                       value={
-                        character.additionalFeatures ? character.additionalFeatures : ''
+                        character.additionalFeatures
+                          ? character.additionalFeatures
+                          : ''
                       }
                       onChange={(e) =>
-                        this.updateCharacter('additionalFeatures', e.target.value)
+                        this.updateCharacter(
+                          'additionalFeatures',
+                          e.target.value
+                        )
                       }
                       rows={13}
                     />
@@ -278,10 +288,15 @@ class DnDCharacterProfileSheet extends React.Component<
                     <textarea
                       style={{ paddingBottom: '5px' }}
                       value={
-                        character.additionalFeatures2 ? character.additionalFeatures2 : ''
+                        character.additionalFeatures2
+                          ? character.additionalFeatures2
+                          : ''
                       }
                       onChange={(e) =>
-                        this.updateCharacter('additionalFeatures2', e.target.value)
+                        this.updateCharacter(
+                          'additionalFeatures2',
+                          e.target.value
+                        )
                       }
                       rows={13}
                     />
@@ -308,9 +323,7 @@ class DnDCharacterProfileSheet extends React.Component<
 
                     <textarea
                       style={{ paddingBottom: '5px', marginTop: '2px' }}
-                      value={
-                        character.treasure ? character.treasure : ''
-                      }
+                      value={character.treasure ? character.treasure : ''}
                       onChange={(e) =>
                         this.updateCharacter('treasure', e.target.value)
                       }
@@ -320,9 +333,7 @@ class DnDCharacterProfileSheet extends React.Component<
                   <div className='col-md-6'>
                     <textarea
                       style={{ paddingBottom: '5px', marginTop: '4px' }}
-                      value={
-                        character.treasure2 ? character.treasure2 : ''
-                      }
+                      value={character.treasure2 ? character.treasure2 : ''}
                       onChange={(e) =>
                         this.updateCharacter('treasure2', e.target.value)
                       }
@@ -330,7 +341,7 @@ class DnDCharacterProfileSheet extends React.Component<
                     />
                   </div>
                 </div>
-                
+
                 <label className='d-and-d-title' style={{ marginTop: '4px' }}>
                   Tesoro
                 </label>
